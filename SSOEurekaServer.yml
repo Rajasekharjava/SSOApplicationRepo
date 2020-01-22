@@ -1,0 +1,20 @@
+server:
+  port: 8761
+
+spring:
+  security:
+    user:
+      name: Eureka123@%$353
+      password: 456YYgydtrrhhd
+  application:
+    name: SSOEurekaServer
+
+
+eureka:
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    service-url:
+      defaultZone:  http://Eureka123@%$353:456YYgydtrrhhd@localhost:8761/eureka/
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
