@@ -4,8 +4,8 @@ server:
 spring:
   security:
     user:
-      name: Eureka123@%$353
-      password: 456YYgydtrrhhd
+      name: admin
+      password: admin
   application:
     name: SSOEurekaServer
 
@@ -15,6 +15,6 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     service-url:
-      defaultZone:  http://Eureka123@%$353:456YYgydtrrhhd@localhost:8761/eureka/
+      defaultZone:  http://admin:admin@localhost:8761/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
