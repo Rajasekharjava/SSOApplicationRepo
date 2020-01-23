@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: SpringCloudSSOPayrollService
+    
+server:
+  port: 4000
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://SSOEurekaServerAdmin:SSOEurekaServerAdmin@localhost:9090/eureka/
+    fetch-registry: true
+    register-with-eureka: true
+    registry-fetch-interval-seconds: 5  
