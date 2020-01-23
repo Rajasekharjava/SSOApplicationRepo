@@ -12,3 +12,5 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     registry-fetch-interval-seconds: 5  
+    
+spring.sso.message : Welcome To Single Sign On Product    
