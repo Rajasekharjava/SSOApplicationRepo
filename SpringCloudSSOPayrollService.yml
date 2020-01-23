@@ -5,6 +5,11 @@ spring:
 server:
   port: 4000
   
+  zipkin:
+    base-url: https://localhost:9411/  
+    sender:
+      type: web
+  
 eureka:
   client:
     serviceUrl:
