@@ -1,0 +1,25 @@
+server:
+  port: 7070
+  
+spring:
+  application:
+    name: SpringCloudSSOAPIGateWayServer  
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://SSOEurekaServerAdmin:SSOEurekaServerAdmin@localhost:9090/eureka/
+      fetch-registry: true
+      register-with-eureka: true
+      
+      
+zuul:
+  routes:
+    users:
+      path: /employee-service/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      serviceId: SpringCloudSSOEmployeeService
+    employees:
+      path: /payroll-service/**
+      sensitiveHeaders: Cookie,Set-Cookie,Authorization
+      serviceId: SpringCloudSSOPayrollService
